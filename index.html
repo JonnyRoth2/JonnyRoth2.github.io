@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
     <body>
-        <h1>Jonny's Website for stuff</h1>
-        <p>Code Time</p>
-        <script type="text/javascript">
-            var clicks = 0;
-            function onClick() {
-                clicks += 1;
-                document.getElementById("clicks").innerHTML = clicks;
-             };
+        <h1>Website for stuff</h1>
+        <script>
+         var clicks = 0;
+
+        function Clicker() {
+            clicks += 1;
+            document.getElementById("clicks").innerHTML = clicks;
+        }
         </script>
-        <button type="button" onclick="onClick()">Click Me for the counter to go up!</button>
         <p>Count: <a id="clicks">0</a></p>
+        <button type="button" onclick="Clicker()">Click Me for the counter to go up!</button>
         <p> Please press the button on visit for the counter to go up</p>
     </body>
 </html>
