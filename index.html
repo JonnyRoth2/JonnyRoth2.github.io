@@ -1,44 +1,22 @@
 <!DOCTYPE html>
-<html>
-    <style>
-        h1{
-            text-decoration: underline;
-        }
-    </style>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="style.css" type="text/css"> 
+        <script src="code.js" defer></script>
+        <title>Roth's Website</title>
+    </head>
     <body>
-        <h1>Jonathan Roth's website</h1>
-        <p align = "left">
-            Hello I am Jonathan Roth and I am currently a Computer Science Student at the Univeristy of Maryland.<br>
-            I use this website to display current projects I am working on and to connect with others in the field.<br>
-        </p>
-        <div id="display" align= "left">
-            Thu Jan 04 2024 04:07:32 GMT-0500 (Eastern Standard Time)
-        </div>
-        <script> document.querySelector("#display").textContent = new Date(); </script>
-        <script>
-         var clicks = 0;
-
-        function Clicker() {
-            clicks += 1;
-            document.getElementById("clicks").innerHTML = clicks;
-        }
-        </script>
-        <p>Count: <a id="clicks">0</a></p>
-        <button type="button" onclick="Clicker()">Click Me for the counter to go up!</button>
-        <p> press button for fun </p>
-        <h2>
-            Contacts
-        </h2>
-            <p>
-                <strong>Email:</strong> jonnyroth12@gmail.com or jroth12@umd.edu
-            </p>
-            <h3>
-                Other Code of mine found at
-            </h3>
-        <div>
-            
-            <p><a href="https://github.com/JonnyRoth2">My Github page</a></p>
-        </div>
+        <h1><strong>Jonathan Roth's Portfolio Site</strong></h1>
+        <p>Currently Under Restructure After Web Dev Class</p>
+        <p>Please leave any contact information in the form below and I will respond</p>
+        <form id="contact" onsubmit="emailMe()">
+            <input type="text" id="name" name="name" placeholder="Your Name" required><br>
+            <input type="text" id="email" name="email" placeholder="Your Email" required><br>
+            <input type="text" id="message" name="message" placeholder="Information" ><br>
+            <input type="submit" value="Contact">
+            <input type="reset">
+        </form>
     </body>
-
 </html>
