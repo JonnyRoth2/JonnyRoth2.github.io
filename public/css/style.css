@@ -4,6 +4,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    height: 100vh;  /* Ensure the body takes up the entire viewport height */
 }
 
 .sidebar {
@@ -11,16 +12,20 @@ body {
     background-color: #b3e5fc;
     padding: 20px;
     text-align: center;
+    height: 100vh;  /* Make the sidebar's height match the full viewport height */
+    position: fixed;  /* Keep the sidebar fixed on the left side */
+    top: 0;
 }
 
-#jonny{
+#jonny {
     width: 150px;
     height: auto;
     border-radius: 10px;
 }
 
 .content {
-    width: 70%;
+    margin-left: 220px;  /* Add some space to the left so content doesn't overlap with the sidebar */
+    width: calc(100% - 220px);  /* Adjust the width to fill the remaining space */
     padding: 40px;
 }
 
