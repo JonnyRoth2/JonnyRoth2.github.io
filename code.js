@@ -1,10 +1,17 @@
-async function sendEmail(event) {
-    event.preventDefault(); // Prevent the default form submission
+const express = require('express');
+const path = require('path');
 
-    const form = event.target;
-    const formData = new FormData(form);
-    const response = await fetch('send_email.php', {
-        method: 'POST',
-        body: formData,
-    });
-}
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Route for serving the homepage
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+// Start the server
+app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
+});

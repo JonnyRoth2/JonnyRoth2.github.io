@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    background-color: #e0f7ff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #b3e5fc;
+    padding: 20px;
+    text-align: center;
+}
+
+#jonny{
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.content {
+    width: 70%;
+    padding: 40px;
+}
+
+.project {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
