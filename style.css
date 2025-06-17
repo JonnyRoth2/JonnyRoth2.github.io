@@ -1,0 +1,32 @@
+header {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 2px 20px rgba(3, 169, 244, 0.1);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        transition: all 0.3s ease;
+        }
+.nav-tabs {
+    display: flex;
+    gap: 0;
+    background: rgba(3, 169, 244, 0.1);
+    border-radius: 50px;
+    padding: 0.25rem;
+        }
+
+.nav-tab {
+    padding: 0.75rem 1.5rem;
+    background: none;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    color: #64748b;
+   text-decoration: none;
+    display: flex;
+   align-items: center;
+    gap: 0.5rem;
+        }
