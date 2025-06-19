@@ -1,22 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="script" href="script.js">
-    <title>Jonathan Roth - Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Personal Website</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <nav class="nav-tabs">
-                    <a href="#" class="nav-tab active" onclick="showPage('home')">Home</a>
-                    <a href="#" class="nav-tab" onclick="showPage('projects')">Projects</a>
-                    <a href="#" class="nav-tab" onclick="showPage('about')">About</a>
-                    <a href="#" class="nav-tab" onclick="showPage('contact')">Contact</a>
-                </nav>
-            </div>
-        </div>
-    </header>
+  <header>
+    <h1>Website</h1>
+    <div class="header-right">
+    <p id="links"><strong>Links</strong></p>
+    <div class="dropdown">
+      <button class="dropbtn">☰</button>
+      <div class="dropdown-content">
+        <a href="https://github.com/JonnyRoth2">GitHub</a>
+        <a href="https://www.linkedin.com/in/jonnyroth/">LinkedIn</a>
+        <a href="jonnyroth12@gmail.com">Email</a>
+        <a href="#about">About</a>
+      </div>
+    </div>
+  </div>
+  </header>
+
+  <main>
+    <main class="main-grid">
+  <section class="about-me">
+    <img src="your-photo.jpg" alt="Your Photo" class="profile-pic" />
+    <h2>About Me</h2>
+    <p>Welcome to my personal website! Here's a bit about me...</p>
+  </section>
+
+  <section class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML & CSS</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+      <!-- add more skills -->
+    </ul>
+  </section>
+
+  <section class="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><a href="#">Project One</a></li>
+      <li><a href="#">Project Two</a></li>
+      <li><a href="#">Project Three</a></li>
+      <!-- add more projects -->
+    </ul>
+  </section>
+</main>
+  </main>
+</body>
+</html>
